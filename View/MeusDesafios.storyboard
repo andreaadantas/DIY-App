@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,15 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIz-Yd-rmu">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NIz-Yd-rmu">
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9b5-q0-6C3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9b5-q0-6C3" secondAttribute="bottom" id="1fq-I4-pmJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="9b5-q0-6C3" secondAttribute="trailing" id="23u-z1-efV"/>
+                                    <constraint firstItem="9b5-q0-6C3" firstAttribute="width" secondItem="NIz-Yd-rmu" secondAttribute="height" multiplier="207:361" id="YpW-NY-D9E"/>
+                                    <constraint firstItem="9b5-q0-6C3" firstAttribute="height" secondItem="NIz-Yd-rmu" secondAttribute="height" id="aiq-EM-KSx"/>
+                                    <constraint firstItem="9b5-q0-6C3" firstAttribute="centerX" secondItem="NIz-Yd-rmu" secondAttribute="centerX" id="gjs-Lo-YgC"/>
+                                    <constraint firstItem="9b5-q0-6C3" firstAttribute="width" secondItem="NIz-Yd-rmu" secondAttribute="width" id="kcH-kK-m8k"/>
+                                    <constraint firstItem="9b5-q0-6C3" firstAttribute="top" secondItem="ebT-yF-jsT" secondAttribute="top" id="kvi-fY-8AJ"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="qg5-p1-fL2"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="ebT-yF-jsT"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uzA-Ha-YGf"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NIz-Yd-rmu" firstAttribute="centerX" secondItem="c0z-Jv-eGW" secondAttribute="centerX" id="6MK-cP-gc6"/>
+                            <constraint firstItem="NIz-Yd-rmu" firstAttribute="bottom" secondItem="uzA-Ha-YGf" secondAttribute="bottom" id="a5c-ZI-IYq"/>
+                            <constraint firstItem="NIz-Yd-rmu" firstAttribute="top" secondItem="uzA-Ha-YGf" secondAttribute="top" id="iEQ-Bt-jKj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Meus desafios " id="a1w-Tr-T6O"/>
                 </viewController>
@@ -50,4 +70,9 @@
             <point key="canvasLocation" x="195.6521739130435" y="166.74107142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
