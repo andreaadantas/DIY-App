@@ -23,6 +23,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-nU-eUt">
+                                        <rect key="frame" x="184" y="652" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="N0Q-Hc-EQ4" kind="show" id="GFI-CT-hy8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="9b5-q0-6C3" secondAttribute="bottom" id="1fq-I4-pmJ"/>
@@ -50,6 +58,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jID-KR-rF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1105.7971014492755" y="166.74107142857142"/>
+        </scene>
+        <!--DesafioProgresso-->
+        <scene sceneID="3cD-rY-O1h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DesafioProgresso" id="N0Q-Hc-EQ4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ABb-To-Wvr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jA-eF-u18" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fko-pp-If7">
